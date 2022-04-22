@@ -1,7 +1,7 @@
+using CemuUDP.Lib.Shared;
 using NUnit.Framework;
-using CemuhookUDP;
 
-namespace CemuUDPTest;
+namespace CemuhookUDPTest;
 
 public class Tests
 {

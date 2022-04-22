@@ -1,6 +1,6 @@
 using Force.Crc32;
 
-namespace CemuhookUDP;
+namespace CemuUDP.Lib.Shared;
 
 // C++ version
 // struct Header {
@@ -114,4 +114,9 @@ public class Header
             ? DecodeHeaderAfterMagic(packet, magic)
             : null;
     }
+
+    // public static byte[] EncodeClientHeader(byte[] packet )
+    // {
+    //     
+    // }
 }

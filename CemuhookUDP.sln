@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cemu-protocal", "cemu-protocal\cemu-protocal.csproj", "{9365CFA3-5E5F-4AEE-B31C-7A9D27002F06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CemuhookUDP", "CemuhookUDP\CemuhookUDP.csproj", "{9365CFA3-5E5F-4AEE-B31C-7A9D27002F06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CemuUDPTest", "CemuUDPTest\CemuUDPTest.csproj", "{2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CemuhookUDPTest", "CemuhookUDPTest\CemuhookUDPTest.csproj", "{2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

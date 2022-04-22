@@ -15,7 +15,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\cemu-protocal\cemu-protocal.csproj" />
+      <ProjectReference Include="..\CemuhookUDP\CemuhookUDP.csproj" />
+      <ProjectReference Include="..\Cemuhook\CemuhookUDP.csproj" />
     </ItemGroup>
 
 </Project>
