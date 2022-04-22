@@ -1,0 +1,31 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=92646d41_002D2668_002D48e7_002Db055_002D346e1bfdc1c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestDecodeClientHeader #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba4b4365_002Dfbe0_002D4a64_002D8724_002D24d21dc4ec52/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestDecodeClientHeader #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d27d2b76_002Daa90_002D4538_002D8384_002Decd1df4417be/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestDecodeClientHeader #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dd2c7919_002Ddd5d_002D498f_002D880b_002Def3f65e39c38/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed60ddb5_002D13a5_002D434f_002D9cfc_002D8ef6f3376a06/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestDecodeClientHeader #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd076d0c_002Dc942_002D4cd6_002D8c5e_002D6ba536a2d5a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestDecodeClientHeader" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

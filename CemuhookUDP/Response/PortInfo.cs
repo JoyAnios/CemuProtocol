@@ -1,6 +1,7 @@
-using CemuUDP.Lib.Shared;
 
-namespace CemuhookUDP.Lib.Response;
+using CemuhookUDP.Shared;
+
+namespace CemuhookUDP.Response;
 
 public enum ConnectionType : byte
 {

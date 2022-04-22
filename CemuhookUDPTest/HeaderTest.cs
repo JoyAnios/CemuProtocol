@@ -1,4 +1,4 @@
-using CemuUDP.Lib.Shared;
+using CemuhookUDP.Shared;
 using NUnit.Framework;
 
 namespace CemuhookUDPTest;

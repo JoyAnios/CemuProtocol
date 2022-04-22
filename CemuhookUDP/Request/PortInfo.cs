@@ -1,19 +1,4 @@
-namespace CemuhookUDP.Lib;
-
-public class Version
-{
-    public ushort version;
-
-    public Version(ushort version)
-    {
-        this.version = version;
-    }
-
-    public static Version DecodeVersion(byte[] packet, int cursor = 0)
-    {
-        return new Version(BitConverter.ToUInt16(packet));
-    }
-}
+namespace CemuhookUDP.Request;
 
 public class PortInfo
 {
@@ -55,15 +40,3 @@ public class PortInfo
         return new PortInfo(padCount, port);
     }
 }
-
-public class PadInfo
-{
-    // /// Determines which method will be used as a look up for the controller
-    // RegisterFlags flags{};
-    // /// Index of the port of the controller to retrieve data about
-    // u8 port_id{};
-    //
-    // /// Mac address of the controller to retrieve data about
-    // private MacAddress mac;
-}
-

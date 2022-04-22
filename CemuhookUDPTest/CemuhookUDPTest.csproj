@@ -16,7 +16,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CemuhookUDP\CemuhookUDP.csproj" />
-      <ProjectReference Include="..\Cemuhook\CemuhookUDP.csproj" />
     </ItemGroup>
 
 </Project>

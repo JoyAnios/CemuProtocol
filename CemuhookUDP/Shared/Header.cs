@@ -1,6 +1,6 @@
 using Force.Crc32;
 
-namespace CemuUDP.Lib.Shared;
+namespace CemuhookUDP.Shared;
 
 // C++ version
 // struct Header {
