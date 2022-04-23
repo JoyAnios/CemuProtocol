@@ -1,19 +1,14 @@
 using System.Net;
 using System.Runtime.InteropServices;
+using static CemuhookUDP.Shared.Constants;
 using Force.Crc32;
 
 namespace CemuhookUDP.Shared;
 
+
 public class Header
 
 {
-    public const uint MaxPacketSize = 100;
-
-    public const ushort ProtocolVersion = 1001;
-    public const uint ClientMagic = 0x43555344; // DSUC (but flipped for LE)
-    public const uint ServerMagic = 0x53555344; // DSUS (but flipped for LE)
-    public const int Length = 16;
-
     public uint magic;
 
     public ushort protocolVersion;
@@ -51,7 +46,7 @@ public class Header
         
         cursor += 2;
         var payloadLength = BitConverter.ToUInt16(packet, cursor);
-        if (payloadLength != packet.Length - Length)
+        if (payloadLength != packet.Length - HeaderSize)
         {
             return null;
         }
