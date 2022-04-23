@@ -5,91 +5,17 @@ using Force.Crc32;
 
 namespace CemuhookUDP.Shared;
 
-
+[StructLayout(LayoutKind.Explicit, Size = 16, CharSet = CharSet.Ansi)]
 public class Header
 
 {
-    public uint magic;
+    [FieldOffset(0)] public uint magic;
 
-    public ushort protocolVersion;
+    [FieldOffset(4)] public ushort protocolVersion;
 
-    public ushort payloadLength;
+    [FieldOffset(6)] public ushort payloadLength;
 
-    public uint crc;
+    [FieldOffset(8)] public uint crc;
 
-    public uint id;
-    
-    public Header(uint magic, ushort protocolVersion, ushort payloadLength, uint crc, uint id)
-    {
-        this.magic = magic;
-        this.protocolVersion = protocolVersion;
-        this.payloadLength = payloadLength;
-        this.crc = crc;
-        this.id = id;
-    }
-
-    public static uint DecodeMagic(byte[] packet)
-    {
-        var magic = BitConverter.ToUInt32(packet, 0);
-        return magic;
-    }
-
-    public static Header? DecodeHeaderAfterMagic(byte[] packet, uint magic)
-    {
-        int cursor = 4;
-        var protocolVersion = BitConverter.ToUInt16(packet, cursor);
-
-        if (protocolVersion > ProtocolVersion)
-        {
-            return null;
-        }
-        
-        cursor += 2;
-        var payloadLength = BitConverter.ToUInt16(packet, cursor);
-        if (payloadLength != packet.Length - HeaderSize)
-        {
-            return null;
-        }
-        
-        cursor += 2;
-        var crc = BitConverter.ToUInt32(packet, cursor);
-        // crc check
-        // Rewirte crc field to 0000
-        Array.Copy(BitConverter.GetBytes((uint)0), 0, packet, cursor, 4 );
-        // do crc
-       var computedCrc =  Crc32Algorithm.Compute(packet);
-       if (crc != computedCrc)
-       {
-           return null;
-       } 
-        
-        cursor += 4;
-        var serverId = BitConverter.ToUInt32(packet, cursor);
-        cursor += 4;
-        
-        return new Header(magic, protocolVersion, payloadLength, crc, serverId);
-    }
-
-    public static Header? DecodeServerHeader(byte[] packet)
-    {
-        var magic = DecodeMagic(packet);
-
-        return magic == ServerMagic
-            ? DecodeHeaderAfterMagic(packet, magic)
-            : null;
-    }
-
-    public static Header? DecodeClientHeader(byte[] packet)
-    {
-        var magic = DecodeMagic(packet);
-
-        return magic == ClientMagic
-            ? DecodeHeaderAfterMagic(packet, magic)
-            : null;
-    }
-
-    // public static byte[] EncodeClientHeader(byte[] packet )
-    // {
-    //     
-    // }
+    [FieldOffset(12)] public uint id;
 }
