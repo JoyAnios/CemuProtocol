@@ -20,10 +20,10 @@ public class Tests
         };
         var header = Header.DecodeClientHeader(msg);
         Assert.IsTrue(header != null);
-        Assert.IsTrue(header?.magic == Header.CLIENT_MAGIC);
+        Assert.IsTrue(header?.magic == Header.ClientMagic);
         Assert.IsTrue(header?.id == 0xa3d7d775);
         Assert.IsTrue(header?.crc == 0x86180a9f);
         Assert.IsTrue(header?.protocolVersion == 1001);
-        Assert.IsTrue(header?.payloadLength == 0x0000001c - Header.LENGTH);
+        Assert.IsTrue(header?.payloadLength == 0x0000001c - Header.Length);
     }
 }

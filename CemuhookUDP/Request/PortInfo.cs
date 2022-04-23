@@ -2,8 +2,10 @@ namespace CemuhookUDP.Request;
 
 public class PortInfo
 {
-    public static uint MAX_PORTS = 4;
+    public const uint MaxPorts = 4;
 
+    
+    
     public uint padCount;
 
     public byte[] port;
@@ -23,7 +25,7 @@ public class PortInfo
         for (var i = 0; i < padCount; i++)
         {
             var slotIndex = packect[cursor + i];
-            if (slotIndex > MAX_PORTS)
+            if (slotIndex > MaxPorts)
             {
                 return null;
             }

@@ -47,9 +47,18 @@ public class Packet
 
     // public Padinfo
 }
-
+// State state{};
+// Model model{};
+// ConnectionType connection_type{};
+// MacAddress mac;
+// Battery battery{};
+// u8 is_pad_active{};
 public class PortInfo
 {
-    
-    
+    public byte id;
+    public Model model;
+    public ConnectionType connectionType;
+    public byte[] mac = new byte[8];
+    public Battery Battery;
+    public byte isPadActive = 0;
 }
