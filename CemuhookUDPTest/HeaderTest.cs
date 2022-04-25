@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using CemuhookUDP;
+using CemuhookUDP.Request;
 using CemuhookUDP.Shared;
 using NUnit.Framework;
 
@@ -58,5 +59,20 @@ public class Tests
         Assert.IsTrue(header?.crc == 0x86180a9f);
         Assert.IsTrue(header?.protocolVersion == 1001);
         Assert.IsTrue(header?.payloadLength == 0x0000001c - Constants.HeaderSize);
+    }
+    
+    [Test]
+    public void TestPadDataDecode()
+    {
+        byte[] msg =
+        {
+            11, 22, 33, 44, 55, 66, 77, 88
+        };
+
+        var padData = CemuhookUDPDecoder.Decode<PadData>(msg);
+        
+        Assert.NotNull(padData);
+        
+
     }
 }

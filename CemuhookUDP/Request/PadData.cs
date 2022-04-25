@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace CemuhookUDP.Request;
 
 public enum RegisterFlags : byte
@@ -7,11 +9,12 @@ public enum RegisterFlags : byte
     PadMACAdddress,
 };
 
-public class PadData
+[StructLayout(LayoutKind.Explicit, Size = 8)]
+public struct PadData
 {
-    public RegisterFlags flags;
+    [FieldOffset(0)] public RegisterFlags flags;
 
-    public byte portId;
+    [FieldOffset(1)] public byte portId;
 
-    public byte[] mac = new byte[8];
+    [FieldOffset(2)] public unsafe fixed  byte mac[6] ;
 }

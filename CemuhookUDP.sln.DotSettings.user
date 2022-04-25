@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a65b722_002Dd907_002D480e_002Da7e9_002De961a55d894f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;And&gt;
+      &lt;TestAncestor&gt;
+        &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestPadDataDecode&lt;/TestId&gt;
+      &lt;/TestAncestor&gt;
+      &lt;Project Location="/Users/wulei/RiderProjects/CemuUDP/CemuhookUDPTest" Presentation="&amp;lt;CemuhookUDPTest&amp;gt;" /&gt;
+      &lt;Namespace&gt;CemuhookUDPTest&lt;/Namespace&gt;
+    &lt;/And&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::2E7DCDA0-E64D-4B79-91DD-BA7A56761CBA::net6.0::CemuhookUDPTest.Tests.TestDecodeClientHeader&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

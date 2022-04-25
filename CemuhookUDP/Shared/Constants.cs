@@ -14,4 +14,5 @@ public class Constants
     public const uint ServerMagic = 0x53555344; 
     public const int HeaderSize = 16;
 
+    public const uint MaxPorts = 4;
 }
