@@ -21,7 +21,7 @@ public struct MultiTouchPadData
 public enum DigitalButton : ushort
 {
     Share = 0x01,
-    u8 = 0x02,
+    L3 = 0x02,
     R3 = 0x04,
     Options = 0x08,
     Up = 0x10,
