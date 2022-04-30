@@ -1,4 +1,4 @@
-
+using System.Runtime.InteropServices;
 using CemuhookUDP.Shared;
 
 namespace CemuhookUDP.Response;
@@ -38,27 +38,14 @@ public enum Battery : byte
 };
 
 
-
-public class Packet
+[StructLayout(LayoutKind.Explicit, Size = 12)]
+public struct PortInfo
 {
-    public Header Header;
-
-    public Type type;
-
-    // public Padinfo
-}
-// State state{};
-// Model model{};
-// ConnectionType connection_type{};
-// MacAddress mac;
-// Battery battery{};
-// u8 is_pad_active{};
-public class PortInfo
-{
-    public byte id;
-    public Model model;
-    public ConnectionType connectionType;
-    public byte[] mac = new byte[8];
-    public Battery Battery;
-    public byte isPadActive = 0;
+    [FieldOffset(0)] public byte id;
+    [FieldOffset(1)] public State state;
+    [FieldOffset(2)] public Model model;
+    [FieldOffset(3)] public ConnectionType connectionType;
+    [FieldOffset(4)] public unsafe fixed byte mac[6];
+    [FieldOffset(10)] public Battery Battery;
+    [FieldOffset(11)] public byte isPadActive;
 }
